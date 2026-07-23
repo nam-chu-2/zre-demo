@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-navy-950: #071223;
+  --color-navy-900: #0b1b33;
+  --color-navy-800: #10254a;
+  --color-navy-700: #1b3a66;
+  --color-navy-600: #27507f;
+  --color-ink: #1a2436;
+  --color-ink-soft: #4c5568;
+  --color-ink-muted: #8b8578;
+  --color-paper: #f5f1e8;
+  --color-card: #fdfcf9;
+  --color-line: #e7e1d2;
+  --color-line-soft: #efeadd;
+  --color-brass-700: #8f6626;
+  --color-brass-600: #a87a2f;
+  --color-brass-500: #bd8f3d;
+  --color-brass-400: #c9a45c;
+  --color-brass-300: #dcc290;
+  --color-series-blue: #1c5cab;
+  --color-series-brass: #c96f1e;
+  --color-pos: #0c7a3d;
+  --color-neg: #bb3a30;
+
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper font-sans text-ink antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brass-600);
+  outline-offset: 2px;
+}
+
+/* ---- range slider ---- */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 22px;
+  background: transparent;
+  cursor: pointer;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-line);
+}
+input[type='range']::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-line);
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -7px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-navy-900);
+  border: 2.5px solid var(--color-brass-400);
+  transition: transform 120ms ease;
+}
+input[type='range']::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--color-navy-900);
+  border: 2.5px solid var(--color-brass-400);
+  transition: transform 120ms ease;
+}
+input[type='range']:hover::-webkit-slider-thumb {
+  transform: scale(1.15);
+}
+input[type='range']:active::-webkit-slider-thumb {
+  transform: scale(1.25);
+}
+
+/* ---- reveal on scroll ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

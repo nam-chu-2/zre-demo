@@ -1,0 +1,50 @@
+[
+  {
+    "id": "centretown",
+    "name": "Centretown",
+    "note": "Downtown core — walkable, strong demand from professionals",
+    "benchmarkRents": { "studio": 1650, "oneBed": 1950, "twoBed": 2450, "threeBed": 2950, "townhouse": 3200 }
+  },
+  {
+    "id": "glebe",
+    "name": "The Glebe",
+    "note": "Premium central neighbourhood near Lansdowne",
+    "benchmarkRents": { "studio": 1750, "oneBed": 2100, "twoBed": 2650, "threeBed": 3250, "townhouse": 3600 }
+  },
+  {
+    "id": "westboro",
+    "name": "Westboro",
+    "note": "Trendy west-end village, river access, high rents",
+    "benchmarkRents": { "studio": 1700, "oneBed": 2050, "twoBed": 2600, "threeBed": 3150, "townhouse": 3500 }
+  },
+  {
+    "id": "hintonburg",
+    "name": "Hintonburg",
+    "note": "Fast-gentrifying arts district beside Westboro",
+    "benchmarkRents": { "studio": 1600, "oneBed": 1900, "twoBed": 2400, "threeBed": 2900, "townhouse": 3150 }
+  },
+  {
+    "id": "sandyhill",
+    "name": "Sandy Hill",
+    "note": "Student-heavy near uOttawa — steady demand, faster turnover",
+    "benchmarkRents": { "studio": 1500, "oneBed": 1800, "twoBed": 2250, "threeBed": 2750, "townhouse": 2950 }
+  },
+  {
+    "id": "kanata",
+    "name": "Kanata",
+    "note": "Tech-employment suburb — families and professionals",
+    "benchmarkRents": { "studio": 1450, "oneBed": 1750, "twoBed": 2150, "threeBed": 2600, "townhouse": 2850 }
+  },
+  {
+    "id": "barrhaven",
+    "name": "Barrhaven",
+    "note": "Growing family suburb in the south end",
+    "benchmarkRents": { "studio": 1400, "oneBed": 1700, "twoBed": 2100, "threeBed": 2550, "townhouse": 2800 }
+  },
+  {
+    "id": "orleans",
+    "name": "Orléans",
+    "note": "East-end family suburb, bilingual market",
+    "benchmarkRents": { "studio": 1375, "oneBed": 1675, "twoBed": 2050, "threeBed": 2500, "townhouse": 2750 }
+  }
+]
